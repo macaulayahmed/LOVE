@@ -1,0 +1,31 @@
+﻿<div class="toolbar">
+    <a class="button back" onclick="jsTouch.loadPage('pages/page2.html', { transition: 'slide-up' });">Back</a>
+    <h1>LOVE</h1>
+    <a class="button next" onclick="jsTouch.loadPage('pages/home.html', { transition: 'flip-bottom' });">Home</a>
+</div>
+<div class="content">
+    <div id="error" class="error"></div>
+	<ul class="rounded" id="panel">
+        <li>
+			<a style="font-size:small">
+				 <img src="images/tabs/phone.png" class="icon greenbox"> Recipient's Phone Number
+			</a>
+		</li>
+		<li>
+            <div class="label">Here:</div>
+			<div class="field"><input type="text" name="phone" id="phone"></div>
+			<div class="clear"></div>
+		</li>
+        <li>
+            <a style="text-align:center" id="next">
+              <img src="images/tabs/go-right.png" class="icon greenbox"> One Final Step <span class="arrow"></span>
+		    </a>
+		</li>
+        
+	</ul>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        page3.init();
+    });
+</script>

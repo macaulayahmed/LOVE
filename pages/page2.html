@@ -1,0 +1,19 @@
+﻿<div class="toolbar">
+	<a class="button back" onclick="jsTouch.loadPage('pages/home.html', { transition: 'slide-up' });">Back</a>
+    <h1>LOVE</h1>
+    <a class="button next" onclick="jsTouch.loadPage('pages/home.html', { transition: 'flip-top' });">Home</a>
+</div>
+<div class="content">
+	<ul class="rounded" id="messagelist">
+        <li>
+            <div style="text-align:center">
+                Tap any of the messages below
+		    </div>
+		</li>
+	</ul>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        page2.init();
+    });
+</script>

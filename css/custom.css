@@ -1,0 +1,46 @@
+﻿.center {
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.samll-size {
+    font-size:xx-small;
+}
+
+.error {
+    color:red;
+    font-size:small;
+    text-align:center;
+    padding-top:10px 10px 10px 10px;
+}
+
+.speech-bubble {
+    text-align:center;
+    margin: 15px 10px 15px 10px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: large;
+    background: #404040;
+    color: #fff;
+    font: normal 16px "Segoe UI", Arial, Sans-serif;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+  .speech-bubble:after
+  {
+   content: "";
+   border: solid 10px transparent; /* set all borders to 10 pixels width */
+   border-top-color: #404040; /* the callout */
+   border-bottom: 0; /* we do not need the bottom border in this case */
+   width: 0;
+   height: 0;
+   overflow: hidden;
+   display: block;
+   position: relative;
+   bottom: -20px; /* border-width of the :after element + padding of the root element */
+   margin: auto;
+  }

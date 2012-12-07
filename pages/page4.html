@@ -1,0 +1,37 @@
+﻿<div class="toolbar">
+	<a class="button back" onclick="jsTouch.loadPage('pages/page3.html', { transition: 'slide-up' });">Back</a>
+    <h1>LOVE</h1>
+    <a class="button next" onclick="jsTouch.loadPage('pages/home.html', { transition: 'flip-top' });">Home</a>
+</div>
+<div class="content">
+	<ul class="rounded" id="panel">
+		<li>
+           <div id="recipient" style="text-align:center">
+
+           </div>
+		</li>
+        <li>
+            <div id="message" class="speech-bubble"></div>
+		</li>
+        <li>
+            <div id="identity" class="center">
+                Tap if you'd like to disclose your identity
+            </div>
+        </li>
+        <li id="sender">
+            <div class="label">Name:</div>
+			<div class="field"><input type="text" name="myName" id="myName"></div>
+			<div class="clear"></div>
+        </li>
+        <li>
+            <a style="text-align:center" id="finish" onclick="">
+              <img src="images/tabs/clock.png" class="icon greenbox"> Finish <span class="arrow"></span>
+		    </a>
+        </li>
+	</ul>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        page4.init();
+    });
+</script>
