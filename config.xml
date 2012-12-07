@@ -4,15 +4,15 @@
 	id			= "Web20TouchDemo"
 	version 	= "1.0">
 
-	<name>W2touch Demo</name>
+	<name>LOVE</name>
 
 	<description>
-		A demo application for Web 2.0 Touch framework. You can fork it on github 
-		https://github.com/web20boom/Web-2.0-Touch
+		With Onitsha Market Literature and their contemporary, Love Text Message books, as her point of departure, Ogunbiyi's project explores how love is constructed through contemporary means of communication.  The viewers' interactions with these booklets completes the artwork as the booklets are purchased and text messages are exchanged
+		https://github.com/macaulayahmed/LOVE
 	</description>
 
-	<author href="http://web20boom.com"	email="vitmalina@gmail.com">
-		Vitali Malinouski
+	<author href="http://www.linkedin.com/in/ahmedmacaulay"	email="macaulayahmed@gmail.com">
+		Ahmed Macaulay
 	</author>
 	
 	<preference name="phonegap-version" value="1.8.1" />
