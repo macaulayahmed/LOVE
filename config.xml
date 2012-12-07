@@ -22,13 +22,13 @@
 	<preference name="webviewbounce" value="false" />
 	<preference name="ios-statusbarstyle" value="black-opaque" />'
 
-	<icon src="images/iphone_icon.png" width="57" height="57" />
-	<icon src="images/iphone_icon2.png" gap:platform="ios" width="72" height="72" />
-	<icon src="images/iphone_icon_2x.png" width="114" height="114" />
+	<icon src="images/love.jpg" width="57" height="57" />
+	<icon src="images/love.jpg" gap:platform="ios" width="72" height="72" />
+	<icon src="images/love.jpg" width="114" height="114" />
 	
-	<gap:splash src="images/iphone_startup.png" width="320" height="480" />
-	<gap:splash src="images/iphone_startup_2x.png" width="640" height="960" />
-	<gap:splash src="images/iphone_startup_l.png" width="1024" height="768" />
-	<gap:splash src="images/iphone_startup_p.png" width="768" height="1024" />
+	<gap:splash src="images/love.jpg" width="320" height="480" />
+	<gap:splash src="images/love.jpg" width="640" height="960" />
+	<gap:splash src="images/love.jpg" width="1024" height="768" />
+	<gap:splash src="images/love.jpg" width="768" height="1024" />
 
 </widget> 
