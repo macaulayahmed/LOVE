@@ -2,57 +2,6 @@
 
 var custom = {
     
-    
-
-    //resize: function () {
-    //    var width = parseInt(window.innerWidth);
-    //    var height = parseInt(window.innerHeight);
-    //    if (width > 1000 || height > 1000) {
-    //        myTouch.width = 320;
-    //    } else {
-    //        myTouch.width = width;
-    //    }
-    //    jsTouch.resize();
-
-    //},
-
-    //init: function () {
-    //    // prevent default scroll 
-    //    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
-    //    document.addEventListener('orientationchange', this.resize, false);
-    //    window.addEventListener('resize', this.resize, false);
-    //    this.resize();
-    //},
-
-    //messageFooter: function () {
-    //    var footer;
-    //    $.ajax({
-    //        type: "GET",
-    //        url: "Footer.xml",
-    //        dataType: "xml",
-    //        success: function (xml) {
-    //            footer = xml;
-    //        }
-    //    });
-    //    return footer;
-    //},
-
-    //getLoveMessages: function () {
-    //    var messages;
-    //    $.ajax({
-    //        type: "GET",
-    //        url: "Messages.xml",
-    //        dataType: "xml",
-    //        success: function (xml) {
-    //            messages = xml;
-    //        },
-    //        fail: function () {
-    //            messages = {};
-    //        }
-    //    });
-    //    return messages;
-    //},
-
     messageFooter: "The Progress of Love, an exhibition at CCA Lagos, 9 McEwen, thru Jan 27, 2013",
     
     loveMessages: function () {
@@ -159,17 +108,29 @@ var custom = {
     },
 
     sendMessage1: function (onSuccess, onFailure, el) {
-        var loc = "http://art.smartmalls.net/Send.aspx";
-        //var url = "http://localhost/lovesms/Send.aspx";
+        var url = "http://art.smartmalls.net/Send.aspx?callback=?";
+        //var url = "http://localhost:8088/Send.aspx?callback=?";
 
-        $.get(url, {
+        $.getJSON(url, {
             'content': custom.loveMessages()[custom.getMessageIndex()],// + " " + custom.getSenderName() + " " + custom.messageFooter,
             'sender': custom.getSenderName(),
             'recipient': custom.getRecipientPhone(),
             'logDate': custom.getCurrentdate(),
         },
-          function (data) {
-              onSuccess(data);
-          });
+       function (data) {
+           onSuccess(data);
+       });
+          
+
+
+        //$.get(url, {
+        //    'content': custom.loveMessages()[custom.getMessageIndex()],// + " " + custom.getSenderName() + " " + custom.messageFooter,
+        //    'sender': custom.getSenderName(),
+        //    'recipient': custom.getRecipientPhone(),
+        //    'logDate': custom.getCurrentdate(),
+        //},
+        //  function (data) {
+        //      onSuccess(data);
+        //  });
     },
 };
